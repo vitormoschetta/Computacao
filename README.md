@@ -24,6 +24,17 @@ Se você possui um pacote de 100 Mega (megabit) você irá baixar arquivos em um
 
 
 
+
+<br>
+
+## Conversões
+
+#### Conversão de Decimal Para Binário:
+
+
+![alt text](images/decimal-binario.jpg?raw=true=250x250 "Title")
+
+
 <br>
 
 
