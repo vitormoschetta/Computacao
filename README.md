@@ -22,6 +22,10 @@ Se você possui um pacote de 100 Mega (megabit) você irá baixar arquivos em um
 
 ## Sistema Hexadecimal
 
+O sistema hexadecimal é um sistema de numeração posicional que representa os números em base `16`. Nele, além dos números decimais de 0 (zero) a 9 (nove), são adicionados as letras do alfabeto de A a F, totalizando 16 caracteres.
+
+Mas porque isso é necessário? Lembra que cada bit é representado por um único caractere? E também que `bytes` são multiplos de 8 `bits`? Com 2 (dois) bytes podemos representar muitas coisas na computação. 2 bytes equivalem a 16 bits, e na numeração decimal não possuímos 16 caracteres, mas apenas 10 (0 a 9). Logo, esse é o motivo de na numeração hexadecimal acrescentarmos as letras do alfabeto de A a F, somando mais 6 caracteres, totalizando 16.
+
 
 
 
@@ -31,8 +35,9 @@ Se você possui um pacote de 100 Mega (megabit) você irá baixar arquivos em um
 
 #### Conversão de Decimal Para Binário:
 
+![alt text](images/decimal-binario.jpg?raw=true=250x250 "Title")  
 
-![alt text](images/decimal-binario.jpg?raw=true=250x250 "Title")
+Se divide sempre por 2 (dois) anotando o resto da divisão, que será sempre 0 (zero) ou 1 (um). Se a ultima divisão não for um número inteiro (1 / 2 por exemplo) o resto valerá 1 (um) também. Depois junta os números restos (uns e zeros) de tráz pra frente.
 
 
 <br>
@@ -51,6 +56,12 @@ Se você possui um pacote de 100 Mega (megabit) você irá baixar arquivos em um
 <https://www.copeltelecom.com/site/blog/kilobyte-megabyte-gigabyte-terabyte/#:~:text=Seguindo%20a%20mesma%20linha%20de,%C3%A9%20maior%20que%201%20byte%3B&text=Um%20Gigabyte%20%C3%A9%20composto%20por%201024%20Megabytes.>
 
 <https://netiz.com.br/blog/saiba-as-diferencas-entre-megabits-megabytes-e-gigas/#:~:text=A%20mensura%C3%A7%C3%A3o%20da%20velocidade%20da,Mbps%20(megabits%20por%20segundo).&text=Uma%20vez%20que%2C%201%20Kbps,Mbps%20(megabits%20por%20segundo).>
+
+<https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_hexadecimal>
+
+<https://www.embarcados.com.br/conversao-entre-sistemas-de-numeracao/>
+
+
 
 
 
