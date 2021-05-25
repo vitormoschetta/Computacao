@@ -26,8 +26,7 @@ O sistema hexadecimal é um sistema de numeração posicional que representa os 
 
 Mas porque isso é necessário? Lembra que cada bit é representado por um único caractere? E também que `bytes` são multiplos de 8 `bits`? Com 2 (dois) bytes podemos representar muitas coisas na computação. 2 bytes equivalem a 16 bits, e na numeração decimal não possuímos 16 caracteres, mas apenas 10 (0 a 9). Logo, esse é o motivo de na numeração hexadecimal acrescentarmos as letras do alfabeto de A a F, somando mais 6 caracteres, totalizando 16.
 
-
-
+![alt text](images/tabela.jpg?raw=true=250x250 "Title") 
 
 <br>
 
