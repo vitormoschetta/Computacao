@@ -38,8 +38,13 @@ Mas porque isso é necessário? Lembra que cada bit é representado por um únic
 
 Se divide sempre por 2 (dois) anotando o resto da divisão, que será sempre 0 (zero) ou 1 (um). Se a ultima divisão não for um número inteiro (1 / 2 por exemplo) o resto valerá 1 (um) também. Depois junta os números restos (uns e zeros) de tráz pra frente.
 
-
 <br>
+
+#### Conversão Binário para Decimal:
+
+![alt text](images/binario-decimal.jpg?raw=true=250x250 "Title")  
+
+Se divide sempre por 2 (dois) anotando o resto da divisão, que será sempre 0 (zero) ou 1 (um). Se a ultima divisão não for um número inteiro (1 / 2 por exemplo) o resto valerá 1 (um) também. Depois junta os números restos (uns e zeros) de tráz pra frente.
 
 
 ## Cores
