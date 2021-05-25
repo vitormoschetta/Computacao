@@ -44,7 +44,8 @@ Se divide sempre por 2 (dois) anotando o resto da divisão, que será sempre 0 (
 
 ![alt text](images/binario-decimal.jpg?raw=true=250x250 "Title")  
 
-Se divide sempre por 2 (dois) anotando o resto da divisão, que será sempre 0 (zero) ou 1 (um). Se a ultima divisão não for um número inteiro (1 / 2 por exemplo) o resto valerá 1 (um) também. Depois junta os números restos (uns e zeros) de tráz pra frente.
+Abaixo de cada bit binário (1 ou 0), da direita para a esquerda, iniciando com o número 1 (um), e colocando múltiplos de 2 (dois), um abaixo de cada bit binário. 
+Depois é só multiplicar o bit binário pelo respectivo número multiplo de dois adicionado abaixo, anotando os resultados. Por fim, basta somar os resultados.
 
 
 ## Cores
