@@ -57,7 +57,7 @@ Depois é só multiplicar o bit binário pelo respectivo número multiplo de doi
 
 Existem três cores primárias pelas quais podemos formar as demais, são elas: `Vermelho`, `Verde` e `Azul`. Em inglês: `Red`, `Green` e `Blue`, abreviados na computação como `RGB`.
 
-Uma imagem computacional é representada por `pixels`, que são pequeníssimos pontos quadrados na tela. Quanto maior a resolução, maior o número de pixels, e consequentemente maior a qualidade da imagem. Quando a resolução é baixa, podemos observar os pixels na tela, pois a imagem apresenta quadrados definidos. 
+Uma imagem computacional é representada por `pixels`, que são pequeníssimos pontos quadrados na tela. Quanto maior a resolução, maior o número de pixels, e consequentemente maior a qualidade da imagem. Quando a resolução é baixa, podemos observar os pixels na tela, pois a imagem apresenta um tom quadriculado.
 
 Se uma imagem é formada por `pixels`, como os pixels são formados? Um pixel é formado por `24 bits`, ou `3 bytes`. Um byte para cada cor primário, ou seja, 1 byte para Vermelho, 1 byte para Verde e 1 byte para Azul.
 
