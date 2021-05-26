@@ -74,6 +74,24 @@ Se você der um zoom, com uma boa camera, em qualquer tela ligada (principalment
 
 Existem algumas técnicas para diminuir a quantidade de bits utilizados por pixel. Uma delas é usar uma tabela de cores externa.
 
+<br>
+
+
+
+## Som Digital
+
+Para converter sinal analógico em sinal digital com boa qualidade, é necessário observar dois parâmetros basicamente:
+
+1. Frequência de amostra
+    
+    Tem haver com a constância na captação do som, com o mínimo de intervalo de tempo possível.
+
+2. Taxa de bits
+
+    Tem haver com a quantidade de tons sonoros capturados em cada intervalo de frequência. Com 16 bits é possível obter uma boa quantidade de tons: 65 mil tons. 
+    Parece muito para tão pouco espaço? Mas definitivamente não é, se imaginarmos que cada pessoa tem seu próprio tom de voz, e que sua própria voz tem dezenas de milhares de tons distintos, então não é muito.
+
+
 
 
 <br>
