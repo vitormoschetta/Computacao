@@ -10,6 +10,7 @@ Um único binário (0 ou 1) é chamado de `bit`. Um conjunto de 8 bits equivale 
 <br>
 
 
+
 ## Mbps (Mega Bits por Segundo)
 
 A velocidade de conexão com a internet é medida na escala de Mega Bits por Segundo. 
@@ -18,6 +19,7 @@ Se você possui um pacote de 100 Mega (megabit) você irá baixar arquivos em um
 100 Megabits é igual 100.000 (cem mil) bits. Considerando que 1 byte tem 8 bits, divide-se 100.000 / 8, que fica 12.500 bytes, ou seja, 12.5 Megabytes.
 
 <br>
+
 
 
 ## Sistema Hexadecimal
@@ -47,10 +49,32 @@ Se divide sempre por 2 (dois) anotando o resto da divisão, que será sempre 0 (
 Abaixo de cada bit binário (1 ou 0), da direita para a esquerda, iniciando com o número 1 (um), e colocando múltiplos de 2 (dois), um abaixo de cada bit binário. 
 Depois é só multiplicar o bit binário pelo respectivo número multiplo de dois adicionado abaixo, anotando os resultados. Por fim, basta somar os resultados.
 
+<br>
 
-## Cores
 
 
+## Cores e Pixels
+
+Existem três cores primárias pelas quais podemos formar as demais, são elas: `Vermelho`, `Verde` e `Azul`. Em inglês: `Red`, `Green` e `Blue`, abreviados na computação como `RGB`.
+
+Uma imagem computacional é representada por `pixels`, que são pequeníssimos pontos quadrados na tela. Quanto maior a resolução, maior o número de pixels, e consequentemente maior a qualidade da imagem. Quando a resolução é baixa, podemos observar os pixels na tela, pois a imagem apresenta quadrados definidos. 
+
+Se uma imagem é formada por `pixels`, como os pixels são formados? Um pixel é formado por `24 bits`, ou `3 bytes`. Um byte para cada cor primário, ou seja, 1 byte para Vermelho, 1 byte para Verde e 1 byte para Azul.
+
+Cada byte equivale a 8 bits, que pode conter 256 diferentes combinações. Ou seja, cada cor tem uma extremidade mais baixa (zero), representando o tom mais claro, e uma extremidade mais alta (255), representando o tom mais escuro da cor.
+
+Logo, em um pixel existem a combinação dessas três cores, que formam uma cor determinante para aquela posição da tela na formação de uma imagem.
+
+
+
+
+
+
+
+
+<br>
+<br>
+<br>
 
 
 
@@ -65,6 +89,7 @@ Depois é só multiplicar o bit binário pelo respectivo número multiplo de doi
 <https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_hexadecimal>
 
 <https://www.embarcados.com.br/conversao-entre-sistemas-de-numeracao/>
+
 
 
 
