@@ -65,11 +65,14 @@ Cada byte equivale a 8 bits, que pode conter 256 diferentes combinações. Ou se
 
 Logo, em um pixel existem a combinação dessas três cores, que formam uma cor determinante para aquela posição da tela na formação de uma imagem.
 
-Se você der um zoom com uma boa camera em qualquer tela (principalmente nos televisores ou monitores mais antigos), verá uma imagem parecida com esta:
+Se você der um zoom, com uma boa camera, em qualquer tela ligada (principalmente nos televisores ou monitores mais antigos), verá uma imagem parecida com esta:
 
 ![alt text](images/pixels.jpg?raw=true=250x250 "Title")  
 
 
+#### Informação adicional: 
+
+Existem algumas técnicas para diminuir a quantidade de bits utilizados por pixel. Uma delas é usar uma tabela de cores externa.
 
 
 
