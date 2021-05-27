@@ -7,6 +7,12 @@ Podemos utilizar o [código de Morse](https://pt.wikipedia.org/wiki/C%C3%B3digo_
 
 Um único binário (0 ou 1) é chamado de `bit`. Um conjunto de 8 bits equivale a um `byte`. Um `kilobyte` equivale a 1.024 bytes, ou 8.192 bits. Um `megabyte` equivale a 1024 kilobytes, ou 8.388.608 bits. Um `gigabyte` equivale a 1024 megabytes, ou 8.589.934.592 bits.
 
+Qual o motivo de um byte ser especificado por 8 bits? Sua adoção na informática deriva do motivo histórico do código ASCII haver adotado números de oito bits como um padrão para representar uma quantidade significativa (256) de caracteres. 
+
+Já houve quem especificasse um byte como 6 ou 7 bits. A primeira codificação de 1 byte = 8 bits deve-se à IBM com a criação do código EBCDIC em 1960. A partir do sucesso dos computadores IBM, padronizou-se que 1 byte = 8 bits, surgindo também o código ASCII de 8 bits em 1961. A representação dos caracteres nos computadores atuais ganharam uma nova dimensão: os padrões EBCDIC (já em desuso há um bom tempo) e ASCII estão sendo substituídos pelos códigos UNICODE UTF, UTF-16 e UTF-32 que podem demandar 1 byte, 2 bytes e até 4 bytes para representar uma letra do alfabeto a fim de acomodar as escritas em línguas mundiais. 
+
+
+
 <br>
 
 
@@ -114,6 +120,8 @@ A codificação Base64 é frequentemente utilizada quando existe uma necessidade
 
 
 #### Referências
+
+<https://pt.wikipedia.org/wiki/Byte>
 
 <https://athoselectronics.com/conversao-de-binario-decimal-hexadecimal/>
 
