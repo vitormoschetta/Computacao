@@ -43,6 +43,7 @@ Logo, concluímos que meu objeto `alfabeto` precisa ser declarado na memória co
 
 Voltando onde estávamos, para representar todo o alfabeto e a numereção decimal, os americanos precisavam de apenas 7 bits. 
 
+<br>
 
 #### Avançando na história
 
@@ -52,11 +53,13 @@ Porém, nem tudo ainda era possível ser representado com 8 bits, e por isso foi
 
 Foi por isso que surgiu então o padrão **UTF-8**. Esse padrão possibilita que cada grupo de caracteres tenha um tamanho variável. Sendo assim, os caracteres ASCII e Latim1 podem utilizar 8 bits (1 byte) e outros caracteres poderão utilizar mais bits, evitando a perda desnecessária de espaço. Como isso é possível? Simples, o padrão UTF-8 utiliza os mesmos caractes do ASCII nas posições até 256. Portanto, fica fácil converter um grupo de caracteres ASCII ou Latim1 em UTF-8.
 
+<br>
 
 #### Numero ou Caractere?
 
 No modelo de codificação ASCII, o número 65 pode ser equivalente ao número decimal '65' ou a letra 'A' do alfabeto. E como o computador sabe se estamos apresentado um número ou um caractere? O compilador deve informar isso. Logo as linguagens de programação e linguagens intermediárias possuem recurso para isso.
 
+<br>
 
 #### Curiosidade
 
@@ -67,6 +70,7 @@ Sabe aquelas páginas antigas da web que viamos coisas como a baixo:
 Isso acontece exatamente porque informava-mos ao navegador utilizar um modelo de codificação ao mesmo tempo que nosso texto continha caracteres não suportados / mapeados por esse modelo. O navegador tentava achar na tabela do modelo o número binário referente aquele caractere e não encontrava.
 
 
+<br>
 
 #### Byte, Kilobyte, Megabyte, Gigabyte...
 
