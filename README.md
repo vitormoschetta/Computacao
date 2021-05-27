@@ -5,7 +5,63 @@ Os circuitos elétricos possuem dois estados principais, ligado ou desligado, pa
 
 Podemos utilizar o [código de Morse](https://pt.wikipedia.org/wiki/C%C3%B3digo_Morse) como um comparativo.
 
-Um único binário (0 ou 1) é chamado de `bit`. Um conjunto de 8 bits equivale a um `byte`. Um `kilobyte` equivale a 1.024 bytes, ou 8.192 bits. Um `megabyte` equivale a 1024 kilobytes, ou 8.388.608 bits. Um `gigabyte` equivale a 1024 megabytes, ou 8.589.934.592 bits.
+Um único binário (0 ou 1) é chamado de `bit`.   
+Um bit pode representar apenas um único caractere.  
+Dois bits podem representar até 4 combinações de uns e zeros:  
+``` 
+00 
+01
+10
+11
+``` 
+Nesse caso, podemos dizer que com dois bits podemos representar até 4 caracteres.  
+
+Cada bit adicional dobra a quantidade de combinações possíveis de uns e zeros. Logo, com três bits podemos representar 4 x 2 combinações de uns e zeros, ou seja, 8 combinações diferentes:
+``` 
+000
+001
+010
+011
+100
+101
+110
+111
+``` 
+
+Com quatro bits podemos apresentar 8 x 2 combinações diferentes de uns e zeros, ou seja 16 combinações. E assim por diante.
+
+Com 8 bits, por exemplo, podemos representar 256 combinações diferentes de uns e zeros. E com essas 256 combinações diferentes é possível representar todo o alfabeto e a numeração decimal dos americanos. Falando nisso, o sistema ASCII foi criado justamente para isso. ASCII significa `American Standard Code for Information Interchange`, traduzido: `Código Padrão Americano para o Intercâmbio de Informação`.
+
+Essa é uma das principais razões para a definição de `1 byte` como equivalente a `8 bits`. Ou seja, percebeu-se que com 8 bits era possível fazer muita coisa.
+
+Para esclarecer melhor, precisamos ter em mente que todo `objeto / valor` computacional precisa ter um endereço no circuito de memória. Porém, para se ter um endereço na memória também é preciso informar o quanto de memória esse objeto irá utilizar. 
+
+Por exemplo, quero poder atribuir há um objeto chamado `alfabeto`, qualquer letra do alfabeto português do Brasil. Sei que existem 26 letras, então o maior valor que eu posso ter é 26. Esse objeto precisa ter quantos bits para que possa armazenar qualquer caractere do alfabeto? 
+
+Como vimos anteriormente, com três bits podemos ter 8 combinações diferentes. Isso é suficiente? Não.   
+4 bits equivale a 8 X 2 (16 combinações) é suficiente? Não.  
+5 bits equivale a 16 X 2 (32 combinaçoes) é suficiente? Sim.  
+Logo, concluímos que meu objeto `alfabeto` precisa ser declarado na memória como um objeto de 5 bits.  
+
+Voltando onde estávamos, para representar todo o alfabeto e a numereção decimal, os americanos precisavam de apenas 8 bits. 
+
+
+##### Avançando na história
+
+Logo que a internet se difundiu, começou a ficar necessário a comunicação mundial. Acontece que alguns alfabetos pelo mundo precisam de muito mais que 256 caracteres (8 bits) para ser representado. Por isso surgiram outros padrões que utilizavam uma outra quantidade de bits para representar um sistema único de códigos e caracteres.
+
+Até que foi decidido criar uma tabela de código único mundial, o **Unicode**. Porém, o unicode requer 3 bytes (24 bits) para representar qualquer caractere. Agora imagine os americanos tendo que utilizar 24 bits para armazenar seu alfabeto, sendo que antes fazia a mesma coisa com apenas 8 bits. Muito espaço perdido. 
+
+Foi por isso que surgiu então o padrão **UTF-8**. Esse padrão possibilita que cada grupo de caracteres tenha um tamanho variável. Sendo assim, os caracteres ASCII e Latim1 podem utilizar 8 bits (1 byte) e outros caracteres poderão utilizar mais bits, evitando a perda desnecessária de espaço. Como isso é possível? Simples, o padrão UTF-8 utiliza os mesmos caractes do ASCII nas posições até 256. Portanto, fica fácil converter um grupo de caracteres ASCII ou Latim1 em UTF-8.
+
+
+
+
+
+
+
+
+Um conjunto de 8 bits equivale a um `byte`. Um `kilobyte` equivale a 1.024 bytes, ou 8.192 bits. Um `megabyte` equivale a 1024 kilobytes, ou 8.388.608 bits. Um `gigabyte` equivale a 1024 megabytes, ou 8.589.934.592 bits.
 
 Qual o motivo de um byte ser especificado por 8 bits? Sua adoção na informática deriva do motivo histórico do código ASCII haver adotado números de oito bits como um padrão para representar uma quantidade significativa (256) de caracteres. 
 
@@ -119,10 +175,10 @@ A codificação Base64 é frequentemente utilizada quando existe uma necessidade
 
 ## Bits e números inteiros
 
-8 bits  --> 255 
-16 bits --> 65.535
-32 bits --> 4.294.967.295 (bilhões)
-64 bits --> 18.446.744.073.709.551.615 
+8 bits  --> 255 combinações
+16 bits --> 65.535 combinações
+32 bits --> 4.294.967.295 (bilhões) combinações
+64 bits --> 18.446.744.073.709.551.615 combinações
 
 <br>
 <br>
