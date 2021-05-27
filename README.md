@@ -114,6 +114,17 @@ A codificação Base64 é frequentemente utilizada quando existe uma necessidade
 
 
 <br>
+
+
+
+## Bits e números inteiros
+
+8 bits  --> 255 
+16 bits --> 65.535
+32 bits --> 4.294.967.295 (bilhões)
+64 bits --> 18.446.744.073.709.551.615 
+
+<br>
 <br>
 <br>
 
