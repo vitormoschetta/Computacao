@@ -44,7 +44,7 @@ Logo, concluímos que meu objeto `alfabeto` precisa ser declarado na memória co
 Voltando onde estávamos, para representar todo o alfabeto e a numereção decimal, os americanos precisavam de apenas 7 bits. 
 
 
-##### Avançando na história
+#### Avançando na história
 
 Logo que a internet se difundiu, começou a ficar necessário a comunicação mundial. Acontece que alguns alfabetos pelo mundo precisam de muito mais que 127 caracteres (7 bits) para ser representado. Por isso surgiram outros padrões que utilizavam uma outra quantidade de bits para representar um sistema único de códigos e caracteres. O padrão de 256 caracteres (8 bits), por exemplo, foi amplamente utilizado. O modelo Latim1 que acrescentava símbolos da linguagem latina é um exemplo. Essa é uma das principais razões para a definição de `1 byte` como equivalente a `8 bits`. Ou seja, percebeu-se que com 8 bits era possível fazer muita coisa. 
 
@@ -53,12 +53,12 @@ Porém, nem tudo ainda era possível ser representado com 8 bits, e por isso foi
 Foi por isso que surgiu então o padrão **UTF-8**. Esse padrão possibilita que cada grupo de caracteres tenha um tamanho variável. Sendo assim, os caracteres ASCII e Latim1 podem utilizar 8 bits (1 byte) e outros caracteres poderão utilizar mais bits, evitando a perda desnecessária de espaço. Como isso é possível? Simples, o padrão UTF-8 utiliza os mesmos caractes do ASCII nas posições até 256. Portanto, fica fácil converter um grupo de caracteres ASCII ou Latim1 em UTF-8.
 
 
-##### Numero ou Caractere?
+#### Numero ou Caractere?
 
 No modelo de codificação ASCII, o número 65 pode ser equivalente ao número decimal '65' ou a letra 'A' do alfabeto. E como o computador sabe se estamos apresentado um número ou um caractere? O compilador deve informar isso. Logo as linguagens de programação e linguagens intermediárias possuem recurso para isso.
 
 
-##### Curiosidade
+#### Curiosidade
 
 Sabe aquelas páginas antigas da web que viamos coisas como a baixo:
 
@@ -68,7 +68,7 @@ Isso acontece exatamente porque informava-mos ao navegador utilizar um modelo de
 
 
 
-##### Byte, Kilobyte, Megabyte, Gigabyte...
+#### Byte, Kilobyte, Megabyte, Gigabyte...
 
 Um conjunto de 8 bits equivale a um `byte`. Um `kilobyte` equivale a 1.024 bytes, ou 8.192 bits. Um `megabyte` equivale a 1024 kilobytes, ou 8.388.608 bits. Um `gigabyte` equivale a 1024 megabytes, ou 8.589.934.592 bits.
 
