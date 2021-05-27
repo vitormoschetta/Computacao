@@ -32,6 +32,8 @@ Mas porque isso é necessário? Lembra que cada bit é representado por um únic
 
 <br>
 
+
+
 ## Conversões
 
 #### Conversão de Decimal Para Binário:
@@ -91,6 +93,17 @@ Para converter sinal analógico em sinal digital com boa qualidade, é necessár
     Tem haver com a quantidade de tons sonoros capturados em cada intervalo de frequência. Com 16 bits é possível obter uma boa quantidade de tons: 65 mil tons. 
     Parece muito para tão pouco espaço? Mas definitivamente não é, se imaginarmos que cada pessoa tem seu próprio tom de voz, e que sua própria voz tem dezenas de milhares de tons distintos, então não é muito.
 
+<br>
+
+
+
+## Base64
+
+Base64 é um método para codificação de dados para transferência na Internet. 
+
+A codificação Base64 é frequentemente utilizada quando existe uma necessidade de transferência e armazenamento de dados binários para um dispositivo designado para trabalhar com dados textuais. Esta codificação é amplamente utilizada por aplicações em conjunto com a linguagem de marcação XML, possibilitando o armazenamento de dados binários em forma de texto. 
+
+![alt text](images/base64.png?raw=true=250x250 "Title")  
 
 
 
@@ -113,6 +126,8 @@ Para converter sinal analógico em sinal digital com boa qualidade, é necessár
 <https://www.embarcados.com.br/conversao-entre-sistemas-de-numeracao/>
 
 <http://paulbourke.net/dataformats/bitmaps/index_pt.html>
+
+<https://pt.wikipedia.org/wiki/Base64>
 
 
 
