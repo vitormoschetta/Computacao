@@ -30,9 +30,7 @@ Cada bit adicional dobra a quantidade de combinações possíveis de uns e zeros
 
 Com quatro bits podemos apresentar 8 x 2 combinações diferentes de uns e zeros, ou seja 16 combinações. E assim por diante.
 
-Com 8 bits, por exemplo, podemos representar 256 combinações diferentes de uns e zeros. E com essas 256 combinações diferentes é possível representar todo o alfabeto e a numeração decimal dos americanos. Falando nisso, o sistema ASCII foi criado justamente para isso. ASCII significa `American Standard Code for Information Interchange`, traduzido: `Código Padrão Americano para o Intercâmbio de Informação`.
-
-Essa é uma das principais razões para a definição de `1 byte` como equivalente a `8 bits`. Ou seja, percebeu-se que com 8 bits era possível fazer muita coisa.
+Com 7 bits, por exemplo, podemos representar 127 combinações diferentes de uns e zeros. E com essas 127 combinações diferentes é possível representar todo o alfabeto de caracteres e símbolos dos norte americanos. Falando nisso, o sistema ASCII foi criado justamente para isso. ASCII significa `American Standard Code for Information Interchange`, traduzido: `Código Padrão Americano para o Intercâmbio de Informação`.
 
 Para esclarecer melhor, precisamos ter em mente que todo `objeto / valor` computacional precisa ter um endereço no circuito de memória. Porém, para se ter um endereço na memória também é preciso informar o quanto de memória esse objeto irá utilizar. 
 
@@ -43,30 +41,36 @@ Como vimos anteriormente, com três bits podemos ter 8 combinações diferentes.
 5 bits equivale a 16 X 2 (32 combinaçoes) é suficiente? Sim.  
 Logo, concluímos que meu objeto `alfabeto` precisa ser declarado na memória como um objeto de 5 bits.  
 
-Voltando onde estávamos, para representar todo o alfabeto e a numereção decimal, os americanos precisavam de apenas 8 bits. 
+Voltando onde estávamos, para representar todo o alfabeto e a numereção decimal, os americanos precisavam de apenas 7 bits. 
 
 
 ##### Avançando na história
 
-Logo que a internet se difundiu, começou a ficar necessário a comunicação mundial. Acontece que alguns alfabetos pelo mundo precisam de muito mais que 256 caracteres (8 bits) para ser representado. Por isso surgiram outros padrões que utilizavam uma outra quantidade de bits para representar um sistema único de códigos e caracteres.
+Logo que a internet se difundiu, começou a ficar necessário a comunicação mundial. Acontece que alguns alfabetos pelo mundo precisam de muito mais que 127 caracteres (7 bits) para ser representado. Por isso surgiram outros padrões que utilizavam uma outra quantidade de bits para representar um sistema único de códigos e caracteres. O padrão de 256 caracteres (8 bits), por exemplo, foi amplamente utilizado. O modelo Latim1 que acrescentava símbolos da linguagem latina é um exemplo. Essa é uma das principais razões para a definição de `1 byte` como equivalente a `8 bits`. Ou seja, percebeu-se que com 8 bits era possível fazer muita coisa. 
 
-Até que foi decidido criar uma tabela de código único mundial, o **Unicode**. Porém, o unicode requer 3 bytes (24 bits) para representar qualquer caractere. Agora imagine os americanos tendo que utilizar 24 bits para armazenar seu alfabeto, sendo que antes fazia a mesma coisa com apenas 8 bits. Muito espaço perdido. 
+Porém, nem tudo ainda era possível ser representado com 8 bits, e por isso foi decidido criar uma tabela de código único mundial, o **Unicode**. Porém, o unicode requer 3 bytes (24 bits) para representar qualquer caractere. Agora imagine os americanos tendo que utilizar 24 bits para armazenar seu alfabeto, sendo que antes fazia a mesma coisa com apenas 8 bits. Muito espaço perdido. 
 
 Foi por isso que surgiu então o padrão **UTF-8**. Esse padrão possibilita que cada grupo de caracteres tenha um tamanho variável. Sendo assim, os caracteres ASCII e Latim1 podem utilizar 8 bits (1 byte) e outros caracteres poderão utilizar mais bits, evitando a perda desnecessária de espaço. Como isso é possível? Simples, o padrão UTF-8 utiliza os mesmos caractes do ASCII nas posições até 256. Portanto, fica fácil converter um grupo de caracteres ASCII ou Latim1 em UTF-8.
 
 
+##### Numero ou Caractere?
+
+No modelo de codificação ASCII, o número 65 pode ser equivalente ao número decimal '65' ou a letra 'A' do alfabeto. E como o computador sabe se estamos apresentado um número ou um caractere? O compilador deve informar isso. Logo as linguagens de programação e linguagens intermediárias possuem recurso para isso.
+
+
+##### Curiosidade
+
+Sabe aquelas páginas antigas da web que viamos coisas como a baixo:
+
+![alt text](images/erro-codificacao.png?raw=true=250x250 "Title") 
+
+Isso acontece exatamente porque informava-mos ao navegador utilizar um modelo de codificação ao mesmo tempo que nosso texto continha caracteres não suportados / mapeados por esse modelo. O navegador tentava achar na tabela do modelo o número binário referente aquele caractere e não encontrava.
 
 
 
-
-
+##### Byte, Kilobyte, Megabyte, Gigabyte...
 
 Um conjunto de 8 bits equivale a um `byte`. Um `kilobyte` equivale a 1.024 bytes, ou 8.192 bits. Um `megabyte` equivale a 1024 kilobytes, ou 8.388.608 bits. Um `gigabyte` equivale a 1024 megabytes, ou 8.589.934.592 bits.
-
-Qual o motivo de um byte ser especificado por 8 bits? Sua adoção na informática deriva do motivo histórico do código ASCII haver adotado números de oito bits como um padrão para representar uma quantidade significativa (256) de caracteres. 
-
-Já houve quem especificasse um byte como 6 ou 7 bits. A primeira codificação de 1 byte = 8 bits deve-se à IBM com a criação do código EBCDIC em 1960. A partir do sucesso dos computadores IBM, padronizou-se que 1 byte = 8 bits, surgindo também o código ASCII de 8 bits em 1961. A representação dos caracteres nos computadores atuais ganharam uma nova dimensão: os padrões EBCDIC (já em desuso há um bom tempo) e ASCII estão sendo substituídos pelos códigos UNICODE UTF, UTF-16 e UTF-32 que podem demandar 1 byte, 2 bytes e até 4 bytes para representar uma letra do alfabeto a fim de acomodar as escritas em línguas mundiais. 
-
 
 
 <br>
